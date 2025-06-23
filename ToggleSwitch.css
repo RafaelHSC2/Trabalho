@@ -1,0 +1,45 @@
+.toggle-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-switch {
+  width: 60px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 15px;
+  margin: 15px auto;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+.toggle-switch.on {
+  background-color: #4caf50;
+}
+
+.toggle-slider {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background-color: white;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-switch.on .toggle-slider {
+  transform: translateX(30px);
+}
+
+.toggle-status {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
